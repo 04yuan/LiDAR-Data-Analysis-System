@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "mvn spring-boot:run",
+      "type": "shell",
+      "command": "mvn spring-boot:run",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "mvn spring-boot:run (mysql)",
+      "type": "shell",
+      "command": "mvn spring-boot:run -Dspring-boot.run.profiles=mysql",
+      "group": "build",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    }
+  ]
+}

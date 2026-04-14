@@ -1,0 +1,520 @@
+{
+  "realtimeSummary": {
+    "onlineVehicleCount": 2,
+    "onlineDeviceCount": 2,
+    "eventCount": 4,
+    "targetCount": 6,
+    "timestampMs": 1768206563440
+  },
+  "realtimeTargets": [
+    {
+      "targetId": "lidar-target-001",
+      "vehicleId": "vehicle-lidar-01",
+      "vehicleName": "Training Car 01",
+      "deviceId": "lidar-c32-01",
+      "status": "online",
+      "targetType": "vehicle",
+      "distanceM": 7.996,
+      "intensity": 67,
+      "pointCount": 1280,
+      "lng": 106.354816,
+      "lat": 29.549742,
+      "heading": 13.38,
+      "timestampMs": 1768206563238
+    },
+    {
+      "targetId": "lidar-target-002",
+      "vehicleId": "vehicle-lidar-01",
+      "vehicleName": "Training Car 01",
+      "deviceId": "lidar-c32-01",
+      "status": "online",
+      "targetType": "pedestrian",
+      "distanceM": 8.504,
+      "intensity": 68,
+      "pointCount": 640,
+      "lng": 106.354809,
+      "lat": 29.549748,
+      "heading": 13.49,
+      "timestampMs": 1768206563250
+    },
+    {
+      "targetId": "lidar-target-003",
+      "vehicleId": "vehicle-lidar-02",
+      "vehicleName": "Training Car 02",
+      "deviceId": "lidar-c32-02",
+      "status": "online",
+      "targetType": "cone",
+      "distanceM": 12.64,
+      "intensity": 54,
+      "pointCount": 220,
+      "lng": 106.354773,
+      "lat": 29.549771,
+      "heading": 11.82,
+      "timestampMs": 1768206563380
+    },
+    {
+      "targetId": "lidar-target-004",
+      "vehicleId": "vehicle-lidar-02",
+      "vehicleName": "Training Car 02",
+      "deviceId": "lidar-c32-02",
+      "status": "online",
+      "targetType": "vehicle",
+      "distanceM": 17.3,
+      "intensity": 72,
+      "pointCount": 1560,
+      "lng": 106.354739,
+      "lat": 29.549794,
+      "heading": 10.4,
+      "timestampMs": 1768206563440
+    },
+    {
+      "targetId": "lidar-target-005",
+      "vehicleId": "vehicle-lidar-03",
+      "vehicleName": "Training Car 03",
+      "deviceId": "lidar-c32-03",
+      "status": "offline",
+      "targetType": "vehicle",
+      "distanceM": 25.11,
+      "intensity": 44,
+      "pointCount": 980,
+      "lng": 106.354701,
+      "lat": 29.549824,
+      "heading": 9.9,
+      "timestampMs": 1768206500000
+    },
+    {
+      "targetId": "lidar-target-006",
+      "vehicleId": "vehicle-lidar-03",
+      "vehicleName": "Training Car 03",
+      "deviceId": "lidar-c32-03",
+      "status": "offline",
+      "targetType": "barrier",
+      "distanceM": 31.424,
+      "intensity": 39,
+      "pointCount": 410,
+      "lng": 106.354667,
+      "lat": 29.549851,
+      "heading": 8.3,
+      "timestampMs": 1768206499000
+    }
+  ],
+  "vehicleList": [
+    {
+      "vehicleId": "vehicle-lidar-01",
+      "vehicleName": "Training Car 01",
+      "status": "online",
+      "lng": 106.354816,
+      "lat": 29.549742,
+      "speedKph": 0.03,
+      "heading": 13.38,
+      "deviceId": "lidar-c32-01",
+      "lastReportTimeMs": 1768206563238
+    },
+    {
+      "vehicleId": "vehicle-lidar-02",
+      "vehicleName": "Training Car 02",
+      "status": "online",
+      "lng": 106.354773,
+      "lat": 29.549771,
+      "speedKph": 1.42,
+      "heading": 11.82,
+      "deviceId": "lidar-c32-02",
+      "lastReportTimeMs": 1768206563440
+    },
+    {
+      "vehicleId": "vehicle-lidar-03",
+      "vehicleName": "Training Car 03",
+      "status": "offline",
+      "lng": 106.354701,
+      "lat": 29.549824,
+      "speedKph": 0.0,
+      "heading": 8.3,
+      "deviceId": "lidar-c32-03",
+      "lastReportTimeMs": 1768206500000
+    }
+  ],
+  "events": [
+    {
+      "eventId": "lidar-event-001",
+      "eventType": "point-cloud-drop",
+      "eventName": "Point Cloud Drop",
+      "eventLevel": "warning",
+      "vehicleId": "vehicle-lidar-01",
+      "vehicleName": "Training Car 01",
+      "message": "Point density dropped below the configured threshold.",
+      "timestampMs": 1768206563200
+    },
+    {
+      "eventId": "lidar-event-002",
+      "eventType": "frame-rate-low",
+      "eventName": "Frame Rate Low",
+      "eventLevel": "warning",
+      "vehicleId": "vehicle-lidar-02",
+      "vehicleName": "Training Car 02",
+      "message": "Frame rate temporarily dropped to 8.7 fps.",
+      "timestampMs": 1768206563390
+    },
+    {
+      "eventId": "lidar-event-003",
+      "eventType": "sensor-occlusion",
+      "eventName": "Sensor Occlusion",
+      "eventLevel": "danger",
+      "vehicleId": "vehicle-lidar-03",
+      "vehicleName": "Training Car 03",
+      "message": "Front-left field of view is partially blocked.",
+      "timestampMs": 1768206500100
+    },
+    {
+      "eventId": "lidar-event-004",
+      "eventType": "tracking-delay",
+      "eventName": "Tracking Delay",
+      "eventLevel": "info",
+      "vehicleId": "vehicle-lidar-01",
+      "vehicleName": "Training Car 01",
+      "message": "Object association latency exceeded 30 ms once.",
+      "timestampMs": 1768206563300
+    }
+  ],
+  "historyTasks": [
+    {
+      "taskId": "lidar-task-20260112-01",
+      "vehicleId": "vehicle-lidar-01",
+      "vehicleName": "Training Car 01",
+      "startTimeMs": 1768206500000,
+      "endTimeMs": 1768206680000,
+      "durationMs": 180000,
+      "distanceKm": 0.31,
+      "eventCount": 2
+    },
+    {
+      "taskId": "lidar-task-20260112-02",
+      "vehicleId": "vehicle-lidar-02",
+      "vehicleName": "Training Car 02",
+      "startTimeMs": 1768206400000,
+      "endTimeMs": 1768206610000,
+      "durationMs": 210000,
+      "distanceKm": 0.52,
+      "eventCount": 1
+    },
+    {
+      "taskId": "lidar-task-20260112-03",
+      "vehicleId": "vehicle-lidar-03",
+      "vehicleName": "Training Car 03",
+      "startTimeMs": 1768206200000,
+      "endTimeMs": 1768206380000,
+      "durationMs": 180000,
+      "distanceKm": 0.18,
+      "eventCount": 3
+    }
+  ],
+  "historyDetails": {
+    "lidar-task-20260112-01": {
+      "taskId": "lidar-task-20260112-01",
+      "vehicleId": "vehicle-lidar-01",
+      "vehicleName": "Training Car 01",
+      "startTimeMs": 1768206500000,
+      "endTimeMs": 1768206680000,
+      "durationMs": 180000,
+      "distanceKm": 0.31,
+      "eventCount": 2,
+      "targetFrameCount": 320,
+      "avgPointCount": 1180,
+      "maxDistanceM": 31.424,
+      "trackPoints": [
+        {
+          "lng": 106.354818,
+          "lat": 29.549742,
+          "timestampMs": 1768206500000
+        },
+        {
+          "lng": 106.354816,
+          "lat": 29.549742,
+          "timestampMs": 1768206563238
+        },
+        {
+          "lng": 106.35481,
+          "lat": 29.549747,
+          "timestampMs": 1768206620000
+        },
+        {
+          "lng": 106.354802,
+          "lat": 29.549751,
+          "timestampMs": 1768206680000
+        }
+      ]
+    },
+    "lidar-task-20260112-02": {
+      "taskId": "lidar-task-20260112-02",
+      "vehicleId": "vehicle-lidar-02",
+      "vehicleName": "Training Car 02",
+      "startTimeMs": 1768206400000,
+      "endTimeMs": 1768206610000,
+      "durationMs": 210000,
+      "distanceKm": 0.52,
+      "eventCount": 1,
+      "targetFrameCount": 410,
+      "avgPointCount": 1324,
+      "maxDistanceM": 28.764,
+      "trackPoints": [
+        {
+          "lng": 106.35479,
+          "lat": 29.54976,
+          "timestampMs": 1768206400000
+        },
+        {
+          "lng": 106.354783,
+          "lat": 29.549766,
+          "timestampMs": 1768206460000
+        },
+        {
+          "lng": 106.354773,
+          "lat": 29.549771,
+          "timestampMs": 1768206563440
+        },
+        {
+          "lng": 106.354761,
+          "lat": 29.549779,
+          "timestampMs": 1768206610000
+        }
+      ]
+    },
+    "lidar-task-20260112-03": {
+      "taskId": "lidar-task-20260112-03",
+      "vehicleId": "vehicle-lidar-03",
+      "vehicleName": "Training Car 03",
+      "startTimeMs": 1768206200000,
+      "endTimeMs": 1768206380000,
+      "durationMs": 180000,
+      "distanceKm": 0.18,
+      "eventCount": 3,
+      "targetFrameCount": 205,
+      "avgPointCount": 910,
+      "maxDistanceM": 25.11,
+      "trackPoints": [
+        {
+          "lng": 106.354722,
+          "lat": 29.54981,
+          "timestampMs": 1768206200000
+        },
+        {
+          "lng": 106.354715,
+          "lat": 29.549817,
+          "timestampMs": 1768206280000
+        },
+        {
+          "lng": 106.354701,
+          "lat": 29.549824,
+          "timestampMs": 1768206380000
+        }
+      ]
+    }
+  },
+  "historyEvents": [
+    {
+      "taskId": "lidar-task-20260112-01",
+      "eventId": "lidar-history-event-001",
+      "eventType": "point-cloud-drop",
+      "eventName": "Point Cloud Drop",
+      "eventLevel": "warning",
+      "vehicleId": "vehicle-lidar-01",
+      "vehicleName": "Training Car 01",
+      "message": "Point density dipped during low-speed maneuver.",
+      "timestampMs": 1768206563200
+    },
+    {
+      "taskId": "lidar-task-20260112-01",
+      "eventId": "lidar-history-event-002",
+      "eventType": "tracking-delay",
+      "eventName": "Tracking Delay",
+      "eventLevel": "info",
+      "vehicleId": "vehicle-lidar-01",
+      "vehicleName": "Training Car 01",
+      "message": "Object association latency exceeded 30 ms once.",
+      "timestampMs": 1768206563300
+    },
+    {
+      "taskId": "lidar-task-20260112-02",
+      "eventId": "lidar-history-event-003",
+      "eventType": "frame-rate-low",
+      "eventName": "Frame Rate Low",
+      "eventLevel": "warning",
+      "vehicleId": "vehicle-lidar-02",
+      "vehicleName": "Training Car 02",
+      "message": "Frame rate dropped during a sharp turn.",
+      "timestampMs": 1768206563390
+    },
+    {
+      "taskId": "lidar-task-20260112-03",
+      "eventId": "lidar-history-event-004",
+      "eventType": "sensor-occlusion",
+      "eventName": "Sensor Occlusion",
+      "eventLevel": "danger",
+      "vehicleId": "vehicle-lidar-03",
+      "vehicleName": "Training Car 03",
+      "message": "Front-left field of view was blocked for 14 seconds.",
+      "timestampMs": 1768206300100
+    }
+  ],
+  "historyAnalysis": {
+    "lidar-task-20260112-01": {
+      "taskId": "lidar-task-20260112-01",
+      "targetCount": 1880,
+      "fusionSuccessRate": 0.93,
+      "abnormalFrameCount": 12,
+      "stopPointCount": 1,
+      "avgSpeedKph": 6.2,
+      "maxDistanceM": 31.424,
+      "timestampMs": 1768206680000
+    },
+    "lidar-task-20260112-02": {
+      "taskId": "lidar-task-20260112-02",
+      "targetCount": 2214,
+      "fusionSuccessRate": 0.91,
+      "abnormalFrameCount": 8,
+      "stopPointCount": 0,
+      "avgSpeedKph": 8.9,
+      "maxDistanceM": 28.764,
+      "timestampMs": 1768206610000
+    },
+    "lidar-task-20260112-03": {
+      "taskId": "lidar-task-20260112-03",
+      "targetCount": 954,
+      "fusionSuccessRate": 0.85,
+      "abnormalFrameCount": 21,
+      "stopPointCount": 2,
+      "avgSpeedKph": 3.6,
+      "maxDistanceM": 25.11,
+      "timestampMs": 1768206380000
+    }
+  },
+  "videoSummary": {
+    "onlineVideoDeviceCount": 3,
+    "onlineChannelCount": 3,
+    "playbackTaskCount": 4,
+    "downloadTaskCount": 2,
+    "timestampMs": 1768206568000
+  },
+  "playbackList": [
+    {
+      "playbackId": "lidar-playback-001",
+      "vehicleId": "vehicle-lidar-01",
+      "channel": "front-center",
+      "cameraName": "Front Center Camera",
+      "startTimeMs": 1768206500000,
+      "endTimeMs": 1768206565000,
+      "durationMs": 65000,
+      "status": "ready",
+      "streamUrl": "http://localhost:8080/mock/video/front-center"
+    },
+    {
+      "playbackId": "lidar-playback-002",
+      "vehicleId": "vehicle-lidar-01",
+      "channel": "front-left",
+      "cameraName": "Front Left Camera",
+      "startTimeMs": 1768206500000,
+      "endTimeMs": 1768206565000,
+      "durationMs": 65000,
+      "status": "ready",
+      "streamUrl": "http://localhost:8080/mock/video/front-left"
+    },
+    {
+      "playbackId": "lidar-playback-003",
+      "vehicleId": "vehicle-lidar-02",
+      "channel": "front-center",
+      "cameraName": "Front Center Camera",
+      "startTimeMs": 1768206460000,
+      "endTimeMs": 1768206568000,
+      "durationMs": 108000,
+      "status": "ready",
+      "streamUrl": "http://localhost:8080/mock/video/front-center"
+    },
+    {
+      "playbackId": "lidar-playback-004",
+      "vehicleId": "vehicle-lidar-03",
+      "channel": "rear-center",
+      "cameraName": "Rear Center Camera",
+      "startTimeMs": 1768206200000,
+      "endTimeMs": 1768206320000,
+      "durationMs": 120000,
+      "status": "processing",
+      "streamUrl": "http://localhost:8080/mock/video/rear-center"
+    }
+  ],
+  "downloadList": [
+    {
+      "downloadId": "lidar-download-001",
+      "vehicleId": "vehicle-lidar-01",
+      "channel": "front-center",
+      "status": "success",
+      "format": "mp4",
+      "createdTimeMs": 1768206600000,
+      "fileSizeMb": 82.4
+    },
+    {
+      "downloadId": "lidar-download-002",
+      "vehicleId": "vehicle-lidar-03",
+      "channel": "rear-center",
+      "status": "processing",
+      "format": "mp4",
+      "createdTimeMs": 1768206340000,
+      "fileSizeMb": 0.0
+    }
+  ],
+  "analysisSummary": {
+    "targetCount": 5048,
+    "fusionSuccessRate": 0.91,
+    "abnormalFrameCount": 41,
+    "timestampMs": 1768206563238
+  },
+  "distanceDistribution": [
+    {
+      "bucket": "0-5m",
+      "count": 162
+    },
+    {
+      "bucket": "5-10m",
+      "count": 624
+    },
+    {
+      "bucket": "10-20m",
+      "count": 1186
+    },
+    {
+      "bucket": "20-30m",
+      "count": 921
+    },
+    {
+      "bucket": "30m+",
+      "count": 213
+    }
+  ],
+  "deviceStats": [
+    {
+      "deviceId": "lidar-c32-01",
+      "deviceName": "LeiShen C32 #01",
+      "status": "online",
+      "frameRateFps": 9.8,
+      "pointDensityPerFrame": 1180,
+      "temperatureC": 42.1,
+      "lastReportTimeMs": 1768206563238
+    },
+    {
+      "deviceId": "lidar-c32-02",
+      "deviceName": "LeiShen C32 #02",
+      "status": "online",
+      "frameRateFps": 8.7,
+      "pointDensityPerFrame": 1324,
+      "temperatureC": 44.5,
+      "lastReportTimeMs": 1768206563440
+    },
+    {
+      "deviceId": "lidar-c32-03",
+      "deviceName": "LeiShen C32 #03",
+      "status": "offline",
+      "frameRateFps": 0.0,
+      "pointDensityPerFrame": 910,
+      "temperatureC": 39.0,
+      "lastReportTimeMs": 1768206500000
+    }
+  ]
+}

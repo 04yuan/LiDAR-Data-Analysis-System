@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run Lidar Backend",
+      "request": "launch",
+      "mainClass": "com.training.lidar.LidarBackendApplication",
+      "projectName": "lidar-backend"
+    },
+    {
+      "type": "java",
+      "name": "Run Lidar Backend (MySQL)",
+      "request": "launch",
+      "mainClass": "com.training.lidar.LidarBackendApplication",
+      "projectName": "lidar-backend",
+      "args": "--spring.profiles.active=mysql"
+    }
+  ]
+}
