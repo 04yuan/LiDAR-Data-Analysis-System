@@ -1,3 +1,6 @@
+# LiDAR-Data-Analysis-System
+A LiDAR-based system for point cloud processing, visualization, and data analysis.
+
 # lidar-backend
 
 Java 17 Spring Boot backend for the lidar training module. The project supports two startup modes:
@@ -63,3 +66,5 @@ Authorization: Bearer demo-token
 
 - `docs/lidar_api.md`
 - `docs/lidar_schema.sql`
+
+
